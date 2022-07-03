@@ -11,7 +11,6 @@ console.log(allcatValue);
 
 const App = () => {
     const [items, setItems] = useState(Menu);
-    const [catItems, setCatItems] = useState(allcatValue);
 
     const filterItem = (categItem) => {
 
@@ -36,7 +35,7 @@ const App = () => {
             </h1>
             <hr />
 
-			<Buttons filterItem={filterItem} catItems={catItems} />
+			<Buttons filterItem={filterItem} allcatValue={allcatValue} />
 
             {/* my main items section  */}
             <div className="menu-items container-fluid mt-2">

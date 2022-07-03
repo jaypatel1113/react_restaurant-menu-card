@@ -1,13 +1,13 @@
 import React from "react";
 
-const Buttons = ({ filterItem, catItems }) => {
+const Buttons = ({ filterItem, allcatValue }) => {
     return (
         <>
             <div className="menu-tabs container mt-2">
                 <div className="menu-tab d-flex justify-content-around">
 
                     {
-                        catItems.map((elem, ind) => <button className="btn btn-warning"
+                        allcatValue.map((elem, ind) => <button className="btn btn-warning"
                         onClick={() => filterItem({elem})} key={ind}>{elem}</button>)
                     }
                     {/* <button
